@@ -1243,11 +1243,245 @@ const galleryData = {
         category: 'Chiang Mai',
       },
       {
-        src: '/thailand-adventures/nature/image1',
+        src: '/thailand-adventures/nature/AV1-Image-File-Format.avif',
         caption: 'Nature in the Thai countryside',
         category: 'Nature',
       },
-      
+      {
+        src: '/thailand-adventures/nature/AV1-Image-File-Format-2.avif',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/AV1-Image-File-Format-3.avif',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/AV1-Image-File-Format.avif',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/AV1-Image-File-Format-2.avif',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/AV1-Image-File-Format-3.avif',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/AV1-Image-File-Format.avif',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/AV1-Image-File-Format-2.avif',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/AV1-Image-File-Format-3.avif',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-2.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-3.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-4.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-5.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-6.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-7.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-8.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-9.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-10.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-11.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-12.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-13.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-14.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-15.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-16.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-17.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-18.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-19.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-20.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-21.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-22.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-23.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-24.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-25.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
+      {
+        src: '/thailand-adventures/nature/JPEG-image-26.jpeg',
+        caption: 'Nature in the Thai countryside',
+        category: 'Nature',
+      },
       // Add more images here...
     ],
   };

@@ -1,34 +1,41 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaSearch, FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaUser } from 'react-icons/fa';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className='flex items-center justify-between p-4 bg-white shadow relative z-10'>
-      {/* Logo */}
-      <div>
+    <header className='flex flex-col sm:flex-row items-center justify-between p-4 bg-white shadow relative z-10'>
+      {/* Top Row */}
+      <div className='flex items-center justify-between w-full sm:w-auto'>
+        {/* Logo */}
         <img src="/sg-logo.jpg" alt="Logo" className='w-12 h-12 rounded-lg' />
+
+        {/* Right Icons (Mobile) */}
+        <div className='flex items-center gap-4 sm:hidden'>
+          {/* User Profile Icon */}
+          <FaUser className='text-gray-600 text-xl cursor-pointer' />
+          
+          {/* Mobile Menu Toggle */}
+          <button onClick={() => setIsOpen(!isOpen)} className='text-2xl'>
+            {isOpen ? <FaTimes /> : <FaBars />}
+          </button>
+        </div>
       </div>
 
       {/* Desktop Search and Nav */}
       <div className='hidden sm:flex items-center gap-6'>
-        <FaSearch className='text-gray-600 text-xl cursor-pointer' />
+        {/* User Profile Icon */}
+        <FaUser className='text-gray-600 text-xl cursor-pointer' />
+
+        {/* Navigation Links */}
         <nav className='flex gap-6 text-sm font-medium'>
           <Link to="/">Home</Link>
           <Link to="/journey">Journey</Link>
           <Link to="/cities">Cities</Link>
           <Link to="/contact">Contact</Link>
         </nav>
-      </div>
-
-      {/* Mobile Right Icons */}
-      <div className='flex items-center gap-4 sm:hidden'>
-        <FaSearch className='text-gray-600 text-xl cursor-pointer' />
-        <button onClick={() => setIsOpen(!isOpen)} className='text-2xl'>
-          {isOpen ? <FaTimes /> : <FaBars />}
-        </button>
       </div>
 
       {/* Mobile Nav Dropdown */}

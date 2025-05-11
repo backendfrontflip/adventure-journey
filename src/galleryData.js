@@ -1,540 +1,645 @@
 const galleryData = {
     Switzerland: [
-      {
-        src: '/switzerland-adventures/cozy-villages/AV1-Image-File-Format-2.avif',
-        caption: 'A peaceful village in the Swiss Alps',
-        category: 'Cozy Villages',
-      },
+    {
+      src: '/switzerland-adventures/cozy-villages/AV1-Image-File-Format-2.avif',
+      caption: 'A peaceful village in the Swiss Alps',
+      category: 'Cozy Villages',
+      season: 'Winter',
+    },
 
-      {
-        src: '/switzerland-adventures/cozy-villages/AV1-Image-File-Format-3.avif',
-        caption: 'A peaceful village in the Swiss Alps',
-        category: 'Cozy Villages',
-      },
+    {
+      src: '/switzerland-adventures/cozy-villages/AV1-Image-File-Format-3.avif',
+      caption: 'A peaceful village in the Swiss Alps',
+      category: 'Cozy Villages',
+      season: 'Winter',
+    },
 
-      {
-        src: '/switzerland-adventures/cozy-villages/JPEG-image.jpeg',
-        caption: 'Charming wooden houses in the mountains',
-        category: 'Cozy Villages',
-      },
-      {
-        src: '/switzerland-adventures/cozy-villages/JPEG-image-2.jpeg',
-        caption: 'Charming wooden houses in the mountains',
-        category: 'Cozy Villages',
-      },
-      {
-        src: '/switzerland-adventures/cozy-villages/JPEG-image-3.jpeg',
-        caption: 'Charming wooden houses in the mountains',
-        category: 'Cozy Villages',
-      },
-      {
-        src: '/switzerland-adventures/cozy-villages/JPEG-image-4.jpeg',
-        caption: 'Charming wooden houses in the mountains',
-        category: 'Cozy Villages',
-      },
-      {
-        src: '/switzerland-adventures/cozy-villages/JPEG-image-5.jpeg',
-        caption: 'Charming wooden houses in the mountains',
-        category: 'Cozy Villages',
-      },
-      {
-        src: '/switzerland-adventures/cozy-villages/JPEG-image-6.jpeg',
-        caption: 'Charming wooden houses in the mountains',
-        category: 'Cozy Villages',
-      },
-      {
-        src: '/switzerland-adventures/cozy-villages/JPEG-image-7.jpeg',
-        caption: 'Charming wooden houses in the mountains',
-        category: 'Cozy Villages',
-      },
-      {
-        src: '/switzerland-adventures/cozy-villages/JPEG-image-8.jpeg',
-        caption: 'Charming wooden houses in the mountains',
-        category: 'Cozy Villages',
-      },
-      {
-        src: '/switzerland-adventures/cozy-villages/JPEG-image-9.jpeg',
-        caption: 'Charming wooden houses in the mountains',
-        category: 'Cozy Villages',
-      },
-      {
-        src: '/switzerland-adventures/cozy-villages/JPEG-image-10.jpeg',
-        caption: 'Charming wooden houses in the mountains',
-        category: 'Cozy Villages',
-      },
-      {
-        src: '/switzerland-adventures/cozy-villages/JPEG-image-11.jpeg',
-        caption: 'Charming wooden houses in the mountains',
-        category: 'Cozy Villages',
-      },
-      {
-        src: '/switzerland-adventures/cozy-villages/JPEG-image-12.jpeg',
-        caption: 'Charming wooden houses in the mountains',
-        category: 'Cozy Villages',
-      },
-
-
-      {
-        src: '/switzerland-adventures/frozen-lakes/AV1-Image-File-Format-2.avif',
-        caption: 'Frozen lake near the mountain',
-        category: 'Frozen Lakes',
-      },
-      {
-        src: '/switzerland-adventures/frozen-lakes/AV1-Image-File-Format-3.avif',
-        caption: 'Frozen lake near the mountain',
-        category: 'Frozen Lakes',
-      },
-      {
-        src: '/switzerland-adventures/frozen-lakes/AV1-Image-File-Format.avif',
-        caption: 'Frozen lake near the mountain',
-        category: 'Frozen Lakes',
-      },
-      {
-        src: '/switzerland-adventures/frozen-lakes/JPEG-image.jpeg',
-        caption: 'Frozen lake near the mountain',
-        category: 'Frozen Lakes',
-      },
-      {
-        src: '/switzerland-adventures/frozen-lakes/JPEG-image-2.jpeg',
-        caption: 'Frozen lake near the mountain',
-        category: 'Frozen Lakes',
-      },
-      {
-        src: '/switzerland-adventures/frozen-lakes/JPEG-image-3.jpeg',
-        caption: 'Frozen lake near the mountain',
-        category: 'Frozen Lakes',
-      },
-      {
-        src: '/switzerland-adventures/frozen-lakes/JPEG-image-4.jpeg',
-        caption: 'Frozen lake near the mountain',
-        category: 'Frozen Lakes',
-      },
-      {
-        src: '/switzerland-adventures/frozen-lakes/JPEG-image-5.jpeg',
-        caption: 'Frozen lake near the mountain',
-        category: 'Frozen Lakes',
-      },
-      {
-        src: '/switzerland-adventures/frozen-lakes/JPEG-image-6.jpeg',
-        caption: 'Frozen lake near the mountain',
-        category: 'Frozen Lakes',
-      },
-      {
-        src: '/switzerland-adventures/frozen-lakes/JPEG-image-7.jpeg',
-        caption: 'Frozen lake near the mountain',
-        category: 'Frozen Lakes',
-      },
-      {
-        src: '/switzerland-adventures/frozen-lakes/JPEG-image-8.jpeg',
-        caption: 'Frozen lake near the mountain',
-        category: 'Frozen Lakes',
-      },
-      {
-        src: '/switzerland-adventures/frozen-lakes/JPEG-image-9.jpeg',
-        caption: 'Frozen lake near the mountain',
-        category: 'Frozen Lakes',
-      },
-      {
-        src: '/switzerland-adventures/frozen-lakes/JPEG-image-10.jpeg',
-        caption: 'Frozen lake near the mountain',
-        category: 'Frozen Lakes',
-      },
-      {
-        src: '/switzerland-adventures/frozen-lakes/JPEG-image-11.jpeg',
-        caption: 'Frozen lake near the mountain',
-        category: 'Frozen Lakes',
-      },
-      
-
-      {
-        src: '/switzerland-adventures/mountain/IMG_0366.jpeg',
-        caption: 'Snow-capped mountain peaks in winter',
-        category: 'Mountains',
-      },
-      {
-        src: '/switzerland-adventures/mountain/IMG_0375.jpeg',
-        caption: 'Snow-capped mountain peaks in winter',
-        category: 'Mountains',
-      },
-      {
-        src: '/switzerland-adventures/mountain/IMG_0376.jpeg',
-        caption: 'Snow-capped mountain peaks in winter',
-        category: 'Mountains',
-      },
-      {
-        src: '/switzerland-adventures/mountain/IMG_0377.jpeg',
-        caption: 'Snow-capped mountain peaks in winter',
-        category: 'Mountains',
-      },
-
-      {
-        src: '/switzerland-adventures/mountain/IMG_0378.jpeg',
-        caption: 'Snow-capped mountain peaks in winter',
-        category: 'Mountains',
-      },
+    {
+      src: '/switzerland-adventures/cozy-villages/JPEG-image.jpeg',
+      caption: 'Charming wooden houses in the mountains',
+      category: 'Cozy Villages',
+      season: 'Winter',
+    },
+    {
+      src: 'public/switzerland-adventures/cozy-villages/JPEG-image-2.jpeg',
+      caption: 'Charming wooden houses in the mountains',
+      category: 'Cozy Villages',
+      season: 'Winter',
+    },
+    {
+      src: 'public/switzerland-adventures/cozy-villages/JPEG-image-3.jpeg',
+      caption: 'Charming wooden houses in the mountains',
+      category: 'Cozy Villages',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/cozy-villages/JPEG-image-4.jpeg',
+      caption: 'Charming wooden houses in the mountains',
+      category: 'Cozy Villages',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/cozy-villages/JPEG-image-5.jpeg',
+      caption: 'Charming wooden houses in the mountains',
+      category: 'Cozy Villages',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/cozy-villages/JPEG-image-6.jpeg',
+      caption: 'Charming wooden houses in the mountains',
+      category: 'Cozy Villages',
+      season: 'Winter',
+    },
+    {
+      src: 'public/switzerland-adventures/cozy-villages/JPEG-image-7.jpeg',
+      caption: 'Charming wooden houses in the mountains',
+      category: 'Cozy Villages',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/cozy-villages/JPEG-image-8.jpeg',
+      caption: 'Charming wooden houses in the mountains',
+      category: 'Cozy Villages',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/cozy-villages/JPEG-image-9.jpeg',
+      caption: 'Charming wooden houses in the mountains',
+      category: 'Cozy Villages',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/cozy-villages/JPEG-image-10.jpeg',
+      caption: 'Charming wooden houses in the mountains',
+      category: 'Cozy Villages',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/cozy-villages/JPEG-image-11.jpeg',
+      caption: 'Charming wooden houses in the mountains',
+      category: 'Cozy Villages',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/cozy-villages/JPEG-image-12.jpeg',
+      caption: 'Charming wooden houses in the mountains',
+      category: 'Cozy Villages',
+      season: 'Winter',
+    },
 
 
-      {
-        src: '/switzerland-adventures/skiing-images/IMG_0387.png',
-        caption: 'Skiing in the Swiss Alps',
-        category: 'Skiing',
-      },
-      {
-        src: '/switzerland-adventures/skiing-images/IMG_0388.jpeg',
-        caption: 'Skiing in the Swiss Alps',
-        category: 'Skiing',
-      },
-      {
-        src: '/switzerland-adventures/skiing-images/IMG_0389.jpeg',
-        caption: 'Skiing in the Swiss Alps',
-        category: 'Skiing',
-      },
-      {
-        src: '/switzerland-adventures/skiing-images/IMG_0390.jpeg',
-        caption: 'Skiing in the Swiss Alps',
-        category: 'Skiing',
-      },
-      {
-        src: '/switzerland-adventures/skiing-images/IMG_0391.jpeg',
-        caption: 'Skiing in the Swiss Alps',
-        category: 'Skiing',
-      },
-      {
-        src: '/switzerland-adventures/skiing-images/IMG_0393.jpeg',
-        caption: 'Skiing in the Swiss Alps',
-        category: 'Skiing',
-      },
-      {
-        src: '/switzerland-adventures/skiing-images/IMG_0394.jpeg',
-        caption: 'Skiing in the Swiss Alps',
-        category: 'Skiing',
-      },
+    {
+      src: '/switzerland-adventures/frozen-lakes/AV1-Image-File-Format-2.avif',
+      caption: 'Frozen lake near the mountain',
+      category: 'Frozen Lakes',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/frozen-lakes/AV1-Image-File-Format-3.avif',
+      caption: 'Frozen lake near the mountain',
+      category: 'Frozen Lakes',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/frozen-lakes/AV1-Image-File-Format.avif',
+      caption: 'Frozen lake near the mountain',
+      category: 'Frozen Lakes',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/frozen-lakes/JPEG-image.jpeg',
+      caption: 'Frozen lake near the mountain',
+      category: 'Frozen Lakes',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/frozen-lakes/JPEG-image-2.jpeg',
+      caption: 'Frozen lake near the mountain',
+      category: 'Frozen Lakes',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/frozen-lakes/JPEG-image-3.jpeg',
+      caption: 'Frozen lake near the mountain',
+      category: 'Frozen Lakes',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/frozen-lakes/JPEG-image-4.jpeg',
+      caption: 'Frozen lake near the mountain',
+      category: 'Frozen Lakes',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/frozen-lakes/JPEG-image-5.jpeg',
+      caption: 'Frozen lake near the mountain',
+      category: 'Frozen Lakes',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/frozen-lakes/JPEG-image-6.jpeg',
+      caption: 'Frozen lake near the mountain',
+      category: 'Frozen Lakes',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/frozen-lakes/JPEG-image-7.jpeg',
+      caption: 'Frozen lake near the mountain',
+      category: 'Frozen Lakes',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/frozen-lakes/JPEG-image-8.jpeg',
+      caption: 'Frozen lake near the mountain',
+      category: 'Frozen Lakes',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/frozen-lakes/JPEG-image-9.jpeg',
+      caption: 'Frozen lake near the mountain',
+      category: 'Frozen Lakes',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/frozen-lakes/JPEG-image-10.jpeg',
+      caption: 'Frozen lake near the mountain',
+      category: 'Frozen Lakes',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/frozen-lakes/JPEG-image-11.jpeg',
+      caption: 'Frozen lake near the mountain',
+      category: 'Frozen Lakes',
+      season: 'Winter',
+    },
+
+
+    {
+      src: '/switzerland-adventures/mountain/IMG_0366.jpeg',
+      caption: 'Snow-capped mountain peaks in winter',
+      category: 'Mountains',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/mountain/IMG_0375.jpeg',
+      caption: 'Snow-capped mountain peaks in winter',
+      category: 'Mountains',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/mountain/IMG_0376.jpeg',
+      caption: 'Snow-capped mountain peaks in winter',
+      category: 'Mountains',
+      season: 'Winter',
+    },
+    {
+      src: '/switzerland-adventures/mountain/IMG_0377.jpeg',
+      caption: 'Snow-capped mountain peaks in winter',
+      category: 'Mountains',
+      season: 'Winter',
+    },
+
+    {
+      src: '/switzerland-adventures/mountain/IMG_0378.jpeg',
+      caption: 'Snow-capped mountain peaks in winter',
+      category: 'Mountains',
+      season: 'Winter',
+    },
+
+
+    {
+      "src": "/switzerland-adventures/skiing-images/IMG_0387.png",
+      "caption": "Skiing in the Swiss Alps",
+      "category": "Skiing",
+      "season": "Winter"
+    },
+    {
+      "src": "/switzerland-adventures/skiing-images/IMG_0388.jpeg",
+      "caption": "Skiing in the Swiss Alps",
+      "category": "Skiing",
+      "season": "Winter"
+    },
+    {
+      "src": "/switzerland-adventures/skiing-images/IMG_0389.jpeg",
+      "caption": "Skiing in the Swiss Alps",
+      "category": "Skiing",
+      "season": "Winter"
+    },
+    {
+      "src": "/switzerland-adventures/skiing-images/IMG_0390.jpeg",
+      "caption": "Skiing in the Swiss Alps",
+      "category": "Skiing",
+      "season": "Winter"
+    },
+    {
+      "src": "/switzerland-adventures/skiing-images/IMG_0391.jpeg",
+      "caption": "Skiing in the Swiss Alps",
+      "category": "Skiing",
+      "season": "Winter"
+    },
+    {
+      "src": "/switzerland-adventures/skiing-images/IMG_0393.jpeg",
+      "caption": "Skiing in the Swiss Alps",
+      "category": "Skiing",
+      "season": "Winter"
+    },
+    {
+      "src": "/switzerland-adventures/skiing-images/IMG_0394.jpeg",
+      "caption": "Skiing in the Swiss Alps",
+      "category": "Skiing",
+      "season": "Winter"
+    }
       
 
     ],
-    Canada: [
-      {
-        src: '/canada-adventures/hiking-in-bc/hiking-1.avif',
-        caption: 'Hiking in the BC mountains during Fall',
-        category: 'Hiking in BC',
-      },
-      {
-        src: '/canada-adventures/hiking-in-bc/hiking-2.jpeg',
-        caption: 'Hiking in the BC mountains during Fall',
-        category: 'Hiking in BC',
-      },
-      {
-        src: '/canada-adventures/hiking-in-bc/hiking-3.jpeg',
-        caption: 'Hiking in the BC mountains during Fall',
-        category: 'Hiking in BC',
-      },
-      {
-        src: '/canada-adventures/hiking-in-bc/hiking-4.jpeg',
-        caption: 'Hiking in the BC mountains during Fall',
-        category: 'Hiking in BC',
-      },
-      {
-        src: '/canada-adventures/hiking-in-bc/hiking-5.jpeg',
-        caption: 'Hiking in the BC mountains during Fall',
-        category: 'Hiking in BC',
-      },
-      {
-        src: '/canada-adventures/hiking-in-bc/hiking-6.jpeg',
-        caption: 'Hiking in the BC mountains during Fall',
-        category: 'Hiking in BC',
-      },
-      {
-        src: '/canada-adventures/hiking-in-bc/hiking-7.jpeg',
-        caption: 'Hiking in the BC mountains during Fall',
-        category: 'Hiking in BC',
-      },
-      {
-        src: '/canada-adventures/hiking-in-bc/hiking-8.jpeg',
-        caption: 'Hiking in the BC mountains during Fall',
-        category: 'Hiking in BC',
-      },
-      {
-        src: '/canada-adventures/hiking-in-bc/hiking-9.jpeg',
-        caption: 'Hiking in the BC mountains during Fall',
-        category: 'Hiking in BC',
-      },
-      {
-        src: '/canada-adventures/hiking-in-bc/hiking-10.jpeg',
-        caption: 'Hiking in the BC mountains during Fall',
-        category: 'Hiking in BC',
-      },
-      {
-        src: '/canada-adventures/hiking-in-bc/hiking-11.jpeg',
-        caption: 'Hiking in the BC mountains during Fall',
-        category: 'Hiking in BC',
-      },
-      {
-        src: '/canada-adventures/hiking-in-bc/hiking-12.jpeg',
-        caption: 'Hiking in the BC mountains during Fall',
-        category: 'Hiking in BC',
-      },
-      {
-        src: '/canada-adventures/hiking-in-bc/hiking-13.jpeg',
-        caption: 'Hiking in the BC mountains during Fall',
-        category: 'Hiking in BC',
-      },
-      {
-        src: '/canada-adventures/hiking-in-bc/hiking-14.jpeg',
-        caption: 'Hiking in the BC mountains during Fall',
-        category: 'Hiking in BC',
-      },
-      {
-        src: '/canada-adventures/hiking-in-bc/hiking-15.jpeg',
-        caption: 'Hiking in the BC mountains during Fall',
-        category: 'Hiking in BC',
-      },
-      {
-        src: '/canada-adventures/hiking-in-bc/hiking-16.jpeg',
-        caption: 'Hiking in the BC mountains during Fall',
-        category: 'Hiking in BC',
-      },
+  Canada: [
+    // Hiking in BC
+    {
+      src: '/canada-adventures/hiking-in-bc/hiking-1.avif',
+      caption: 'Hiking in the BC mountains during Fall',
+      category: 'Hiking in BC',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/hiking-in-bc/hiking-2.jpeg',
+      caption: 'Hiking in the BC mountains during Fall',
+      category: 'Hiking in BC',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/hiking-in-bc/hiking-3.jpeg',
+      caption: 'Hiking in the BC mountains during Fall',
+      category: 'Hiking in BC',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/hiking-in-bc/hiking-4.jpeg',
+      caption: 'Hiking in the BC mountains during Fall',
+      category: 'Hiking in BC',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/hiking-in-bc/hiking-5.jpeg',
+      caption: 'Hiking in the BC mountains during Fall',
+      category: 'Hiking in BC',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/hiking-in-bc/hiking-6.jpeg',
+      caption: 'Hiking in the BC mountains during Fall',
+      category: 'Hiking in BC',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/hiking-in-bc/hiking-7.jpeg',
+      caption: 'Hiking in the BC mountains during Fall',
+      category: 'Hiking in BC',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/hiking-in-bc/hiking-8.jpeg',
+      caption: 'Hiking in the BC mountains during Fall',
+      category: 'Hiking in BC',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/hiking-in-bc/hiking-9.jpeg',
+      caption: 'Hiking in the BC mountains during Fall',
+      category: 'Hiking in BC',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/hiking-in-bc/hiking-10.jpeg',
+      caption: 'Hiking in the BC mountains during Fall',
+      category: 'Hiking in BC',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/hiking-in-bc/hiking-11.jpeg',
+      caption: 'Hiking in the BC mountains during Fall',
+      category: 'Hiking in BC',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/hiking-in-bc/hiking-12.jpeg',
+      caption: 'Hiking in the BC mountains during Fall',
+      category: 'Hiking in BC',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/hiking-in-bc/hiking-13.jpeg',
+      caption: 'Hiking in the BC mountains during Fall',
+      category: 'Hiking in BC',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/hiking-in-bc/hiking-14.jpeg',
+      caption: 'Hiking in the BC mountains during Fall',
+      category: 'Hiking in BC',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/hiking-in-bc/hiking-15.jpeg',
+      caption: 'Hiking in the BC mountains during Fall',
+      category: 'Hiking in BC',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/hiking-in-bc/hiking-16.jpeg',
+      caption: 'Hiking in the BC mountains during Fall',
+      category: 'Hiking in BC',
+      season: 'Fall',
+    },
 
-      {
-        src: '/canada-adventures/kayaking/kayaking-1.avif',
-        caption: 'Kayaking on a serene lake',
-        category: 'Kayaking',
-      },
-      {
-        src: '/canada-adventures/kayaking/kayaking-3.jpeg',
-        caption: 'Kayaking on a serene lake',
-        category: 'Kayaking',
-      },
-      {
-        src: '/canada-adventures/kayaking/kayaking-4.jpeg',
-        caption: 'Kayaking on a serene lake',
-        category: 'Kayaking',
-      },
-      {
-        src: '/canada-adventures/kayaking/kayaking-5.jpeg',
-        caption: 'Kayaking on a serene lake',
-        category: 'Kayaking',
-      },
-      {
-        src: '/canada-adventures/kayaking/kayaking-6.jpeg',
-        caption: 'Kayaking on a serene lake',
-        category: 'Kayaking',
-      },
-      {
-        src: '/canada-adventures/kayaking/kayaking-7.jpeg',
-        caption: 'Kayaking on a serene lake',
-        category: 'Kayaking',
-      },
-      {
-        src: '/canada-adventures/kayaking/kayaking-8.jpeg',
-        caption: 'Kayaking on a serene lake',
-        category: 'Kayaking',
-      },
-      {
-        src: '/canada-adventures/kayaking/kayaking-9.jpeg',
-        caption: 'Kayaking on a serene lake',
-        category: 'Kayaking',
-      },
-      {
-        src: '/canada-adventures/kayaking/kayaking-10.jpeg',
-        caption: 'Kayaking on a serene lake',
-        category: 'Kayaking',
-      },
-      {
-        src: '/canada-adventures/kayaking/kayaking-11.jpeg',
-        caption: 'Kayaking on a serene lake',
-        category: 'Kayaking',
-      },
-      {
-        src: '/canada-adventures/kayaking/kayaking-12.jpeg',
-        caption: 'Kayaking on a serene lake',
-        category: 'Kayaking',
-      },
-      {
-        src: '/canada-adventures/kayaking/kayaking-13.jpeg',
-        caption: 'Kayaking on a serene lake',
-        category: 'Kayaking',
-      },
-      {
-        src: '/canada-adventures/kayaking/kayaking-14.jpeg',
-        caption: 'Kayaking on a serene lake',
-        category: 'Kayaking',
-      },
-      {
-        src: '/canada-adventures/kayaking/kayaking-15.jpeg',
-        caption: 'Kayaking on a serene lake',
-        category: 'Kayaking',
-      },
-      {
-        src: '/canada-adventures/kayaking/kayaking-16.jpeg',
-        caption: 'Kayaking on a serene lake',
-        category: 'Kayaking',
-      },
+    // Kayaking
+    {
+      src: '/canada-adventures/kayaking/kayaking-1.avif',
+      caption: 'Kayaking on a serene lake',
+      category: 'Kayaking',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/kayaking/kayaking-3.jpeg',
+      caption: 'Kayaking on a serene lake',
+      category: 'Kayaking',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/kayaking/kayaking-4.jpeg',
+      caption: 'Kayaking on a serene lake',
+      category: 'Kayaking',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/kayaking/kayaking-5.jpeg',
+      caption: 'Kayaking on a serene lake',
+      category: 'Kayaking',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/kayaking/kayaking-6.jpeg',
+      caption: 'Kayaking on a serene lake',
+      category: 'Kayaking',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/kayaking/kayaking-7.jpeg',
+      caption: 'Kayaking on a serene lake',
+      category: 'Kayaking',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/kayaking/kayaking-8.jpeg',
+      caption: 'Kayaking on a serene lake',
+      category: 'Kayaking',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/kayaking/kayaking-9.jpeg',
+      caption: 'Kayaking on a serene lake',
+      category: 'Kayaking',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/kayaking/kayaking-10.jpeg',
+      caption: 'Kayaking on a serene lake',
+      category: 'Kayaking',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/kayaking/kayaking-11.jpeg',
+      caption: 'Kayaking on a serene lake',
+      category: 'Kayaking',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/kayaking/kayaking-12.jpeg',
+      caption: 'Kayaking on a serene lake',
+      category: 'Kayaking',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/kayaking/kayaking-13.jpeg',
+      caption: 'Kayaking on a serene lake',
+      category: 'Kayaking',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/kayaking/kayaking-14.jpeg',
+      caption: 'Kayaking on a serene lake',
+      category: 'Kayaking',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/kayaking/kayaking-15.jpeg',
+      caption: 'Kayaking on a serene lake',
+      category: 'Kayaking',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/kayaking/kayaking-16.jpeg',
+      caption: 'Kayaking on a serene lake',
+      category: 'Kayaking',
+      season: 'Fall',
+    },
 
-      {
-        src: '/canada-adventures/lakes-camping/lake-1.jpeg',
-        caption: 'Camping by a peaceful lake in the mountains',
-        category: 'Lakes Camping',
-      },
-      {
-        src: '/canada-adventures/lakes-camping/lake-2.jpeg',
-        caption: 'Camping by a peaceful lake in the mountains',
-        category: 'Lakes Camping',
-      },
-      {
-        src: '/canada-adventures/lakes-camping/lake-3.jpeg',
-        caption: 'Camping by a peaceful lake in the mountains',
-        category: 'Lakes Camping',
-      },
-      {
-        src: '/canada-adventures/lakes-camping/lake-4.jpeg',
-        caption: 'Camping by a peaceful lake in the mountains',
-        category: 'Lakes Camping',
-      },
-      {
-        src: '/canada-adventures/lakes-camping/lake-5.jpeg',
-        caption: 'Camping by a peaceful lake in the mountains',
-        category: 'Lakes Camping',
-      },
-      {
-        src: '/canada-adventures/lakes-camping/lake-6.jpeg',
-        caption: 'Camping by a peaceful lake in the mountains',
-        category: 'Lakes Camping',
-      },
-      {
-        src: '/canada-adventures/lakes-camping/lake-7.jpeg',
-        caption: 'Camping by a peaceful lake in the mountains',
-        category: 'Lakes Camping',
-      },
-      {
-        src: '/canada-adventures/lakes-camping/lake-8.jpeg',
-        caption: 'Camping by a peaceful lake in the mountains',
-        category: 'Lakes Camping',
-      },
-      {
-        src: '/canada-adventures/lakes-camping/lake-9.jpeg',
-        caption: 'Camping by a peaceful lake in the mountains',
-        category: 'Lakes Camping',
-      },
-      {
-        src: '/canada-adventures/lakes-camping/lake-10.jpeg',
-        caption: 'Camping by a peaceful lake in the mountains',
-        category: 'Lakes Camping',
-      },
-      {
-        src: '/canada-adventures/lakes-camping/lake-11.jpeg',
-        caption: 'Camping by a peaceful lake in the mountains',
-        category: 'Lakes Camping',
-      },
-      {
-        src: '/canada-adventures/lakes-camping/lake-12.jpeg',
-        caption: 'Camping by a peaceful lake in the mountains',
-        category: 'Lakes Camping',
-      },
-      {
-        src: '/canada-adventures/lakes-camping/lake-13.jpeg',
-        caption: 'Camping by a peaceful lake in the mountains',
-        category: 'Lakes Camping',
-      },
-      {
-        src: '/canada-adventures/lakes-camping/lake-14.jpeg',
-        caption: 'Camping by a peaceful lake in the mountains',
-        category: 'Lakes Camping',
-      },
-      {
-        src: '/canada-adventures/lakes-camping/lake-15.jpeg',
-        caption: 'Camping by a peaceful lake in the mountains',
-        category: 'Lakes Camping',
-      },
-      {
-        src: '/canada-adventures/lakes-camping/lake-16.jpeg',
-        caption: 'Camping by a peaceful lake in the mountains',
-        category: 'Lakes Camping',
-      },
-      {
-        src: '/canada-adventures/lakes-camping/lake-17.jpeg',
-        caption: 'Camping by a peaceful lake in the mountains',
-        category: 'Lakes Camping',
-      },
+    // Lakes Camping
+    {
+      src: '/canada-adventures/lakes-camping/lake-1.jpeg',
+      caption: 'Camping by a peaceful lake in the mountains',
+      category: 'Lakes Camping',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/lakes-camping/lake-2.jpeg',
+      caption: 'Camping by a peaceful lake in the mountains',
+      category: 'Lakes Camping',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/lakes-camping/lake-3.jpeg',
+      caption: 'Camping by a peaceful lake in the mountains',
+      category: 'Lakes Camping',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/lakes-camping/lake-4.jpeg',
+      caption: 'Camping by a peaceful lake in the mountains',
+      category: 'Lakes Camping',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/lakes-camping/lake-5.jpeg',
+      caption: 'Camping by a peaceful lake in the mountains',
+      category: 'Lakes Camping',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/lakes-camping/lake-6.jpeg',
+      caption: 'Camping by a peaceful lake in the mountains',
+      category: 'Lakes Camping',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/lakes-camping/lake-7.jpeg',
+      caption: 'Camping by a peaceful lake in the mountains',
+      category: 'Lakes Camping',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/lakes-camping/lake-8.jpeg',
+      caption: 'Camping by a peaceful lake in the mountains',
+      category: 'Lakes Camping',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/lakes-camping/lake-9.jpeg',
+      caption: 'Camping by a peaceful lake in the mountains',
+      category: 'Lakes Camping',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/lakes-camping/lake-10.jpeg',
+      caption: 'Camping by a peaceful lake in the mountains',
+      category: 'Lakes Camping',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/lakes-camping/lake-11.jpeg',
+      caption: 'Camping by a peaceful lake in the mountains',
+      category: 'Lakes Camping',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/lakes-camping/lake-12.jpeg',
+      caption: 'Camping by a peaceful lake in the mountains',
+      category: 'Lakes Camping',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/lakes-camping/lake-13.jpeg',
+      caption: 'Camping by a peaceful lake in the mountains',
+      category: 'Lakes Camping',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/lakes-camping/lake-14.jpeg',
+      caption: 'Camping by a peaceful lake in the mountains',
+      category: 'Lakes Camping',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/lakes-camping/lake-15.jpeg',
+      caption: 'Camping by a peaceful lake in the mountains',
+      category: 'Lakes Camping',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/lakes-camping/lake-16.jpeg',
+      caption: 'Camping by a peaceful lake in the mountains',
+      category: 'Lakes Camping',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/lakes-camping/lake-17.jpeg',
+      caption: 'Camping by a peaceful lake in the mountains',
+      category: 'Lakes Camping',
+      season: 'Fall',
+    },
 
+    // Wildlife Watching
+    {
+      src: '/canada-adventures/wildlife-watching/wildife-1.jpeg',
+      caption: 'Watching wildlife in the forest',
+      category: 'Wildlife Watching',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/wildlife-watching/wildife-2.jpeg',
+      caption: 'Watching wildlife in the forest',
+      category: 'Wildlife Watching',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/wildlife-watching/wildife-3.jpeg',
+      caption: 'Watching wildlife in the forest',
+      category: 'Wildlife Watching',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/wildlife-watching/wildife-4.jpeg',
+      caption: 'Watching wildlife in the forest',
+      category: 'Wildlife Watching',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/wildlife-watching/wildife-5.jpeg',
+      caption: 'Watching wildlife in the forest',
+      category: 'Wildlife Watching',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/wildlife-watching/wildife-6.jpeg',
+      caption: 'Watching wildlife in the forest',
+      category: 'Wildlife Watching',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/wildlife-watching/wildife-7.jpeg',
+      caption: 'Watching wildlife in the forest',
+      category: 'Wildlife Watching',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/wildlife-watching/wildife-8.jpeg',
+      caption: 'Watching wildlife in the forest',
+      category: 'Wildlife Watching',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/wildlife-watching/wildife-9.jpeg',
+      caption: 'Watching wildlife in the forest',
+      category: 'Wildlife Watching',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/wildlife-watching/wildife-10.jpeg',
+      caption: 'Watching wildlife in the forest',
+      category: 'Wildlife Watching',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/wildlife-watching/wildife-11.jpeg',
+      caption: 'Watching wildlife in the forest',
+      category: 'Wildlife Watching',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/wildlife-watching/wildife-12.jpeg',
+      caption: 'Watching wildlife in the forest',
+      category: 'Wildlife Watching',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/wildlife-watching/wildife-13.jpeg',
+      caption: 'Watching wildlife in the forest',
+      category: 'Wildlife Watching',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/wildlife-watching/wildife-14.jpeg',
+      caption: 'Watching wildlife in the forest',
+      category: 'Wildlife Watching',
+      season: 'Fall',
+    },
+    {
+      src: '/canada-adventures/wildlife-watching/wildife-15.jpeg',
+      caption: 'Watching wildlife in the forest',
+      category: 'Wildlife Watching',
+      season: 'Fall',
+    },
+  ],
 
-      {
-        src: '/canada-adventures/wildlife-watching/wildife-1.jpeg',
-        caption: 'Watching wildlife in the forest',
-        category: 'Wildlife Watching',
-      },
-      {
-        src: '/canada-adventures/wildlife-watching/wildife-2.jpeg',
-        caption: 'Watching wildlife in the forest',
-        category: 'Wildlife Watching',
-      },
-      {
-        src: '/canada-adventures/wildlife-watching/wildife-3.jpeg',
-        caption: 'Watching wildlife in the forest',
-        category: 'Wildlife Watching',
-      },
-      {
-        src: '/canada-adventures/wildlife-watching/wildife-4.jpeg',
-        caption: 'Watching wildlife in the forest',
-        category: 'Wildlife Watching',
-      },
-      {
-        src: '/canada-adventures/wildlife-watching/wildife-5.jpeg',
-        caption: 'Watching wildlife in the forest',
-        category: 'Wildlife Watching',
-      },
-      {
-        src: '/canada-adventures/wildlife-watching/wildife-6.jpeg',
-        caption: 'Watching wildlife in the forest',
-        category: 'Wildlife Watching',
-      },
-      {
-        src: '/canada-adventures/wildlife-watching/wildife-7.jpeg',
-        caption: 'Watching wildlife in the forest',
-        category: 'Wildlife Watching',
-      },
-      {
-        src: '/canada-adventures/wildlife-watching/wildife-8.jpeg',
-        caption: 'Watching wildlife in the forest',
-        category: 'Wildlife Watching',
-      },
-      {
-        src: '/canada-adventures/wildlife-watching/wildife-9.jpeg',
-        caption: 'Watching wildlife in the forest',
-        category: 'Wildlife Watching',
-      },
-      {
-        src: '/canada-adventures/wildlife-watching/wildife-10.jpeg',
-        caption: 'Watching wildlife in the forest',
-        category: 'Wildlife Watching',
-      },
-      {
-        src: '/canada-adventures/wildlife-watching/wildife-11.jpeg',
-        caption: 'Watching wildlife in the forest',
-        category: 'Wildlife Watching',
-      },
-      {
-        src: '/canada-adventures/wildlife-watching/wildife-12.jpeg',
-        caption: 'Watching wildlife in the forest',
-        category: 'Wildlife Watching',
-      },
-      {
-        src: '/canada-adventures/wildlife-watching/wildife-13.jpeg',
-        caption: 'Watching wildlife in the forest',
-        category: 'Wildlife Watching',
-      },
-      {
-        src: '/canada-adventures/wildlife-watching/wildife-14.jpeg',
-        caption: 'Watching wildlife in the forest',
-        category: 'Wildlife Watching',
-      },
-      {
-        src: '/canada-adventures/wildlife-watching/wildife-15.jpeg',
-        caption: 'Watching wildlife in the forest',
-        category: 'Wildlife Watching',
-      },
-
-      // Add more images here...
-    ],
     Japan: [
       {
         src: '/japan-adventures/fall/JPEG-image-1.jpeg',
@@ -545,283 +650,339 @@ const galleryData = {
         src: '/japan-adventures/fall/JPEG-image-2.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-3.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-4.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-5.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-6.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-7.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-8.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-9.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-10.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-11.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-12.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-13.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-14.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-15.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-16.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-17.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-18.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-19.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-20.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-21.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-22.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-23.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-24.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-25.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-26.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-27.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
       {
         src: '/japan-adventures/fall/JPEG-image-28.jpeg',
         caption: 'Fall leaves turning golden in the forest',
         category: 'Fall',
+        season: 'Fall'
       },
 
       {
         src: '/japan-adventures/spring/AV1-Image-File-Format-2.avif',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        seaso
       },
       {
         src: '/japan-adventures/spring/AV1-Image-File-Format-3.avif',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/AV1-Image-File-Format-4.avif',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/AV1-Image-File-Format-5.avif',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-2.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-3.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-4.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-5.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-6.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-7.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-8.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-9.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-10.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-11.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-12.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-13.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-14.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-15.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-16.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-17.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-18.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-19.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-20.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-21.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-23.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-23.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/spring/JPEG-image-24.jpeg',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
+        season: 'Sakura Season',
       },
 
       {
         src: '/japan-adventures/serene/JPEG-image-1.avif',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Sakura Season',
       },
       {
         src: '/japan-adventures/serene/JPEG-image-2.avif',
@@ -829,141 +990,191 @@ const galleryData = {
         category: 'Serene',
       },
       {
+        src: '/japan-adventures/serene/JPEG-image-2.jpeg',
+        caption: 'A tranquil temple surrounded by nature',
+        category: 'Serene',
+        season: 'Radiant',
+      },
+      {
         src: '/japan-adventures/serene/JPEG-image-3.avif',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
+      },
+      {
+        src: '/japan-adventures/serene/JPEG-image-3.jpeg',
+        caption: 'A tranquil temple surrounded by nature',
+        category: 'Serene',
+        season: 'Radiant',
       },
       {
         src: '/japan-adventures/serene/JPEG-image-4.avif',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
+      },
+      {
+        src: '/japan-adventures/serene/JPEG-image-4.jpeg',
+        caption: 'A tranquil temple surrounded by nature',
+        category: 'Serene',
+        season: 'Radiant',
       },
       {
         src: '/japan-adventures/serene/JPEG-image-5.avif',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-6.avif',
+        src: '/japan-adventures/serene/JPEG-image-5.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-7.avif',
+        src: '/japan-adventures/serene/JPEG-image-6.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-8.avif',
+        src: '/japan-adventures/serene/JPEG-image-7.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-9.avif',
+        src: '/japan-adventures/serene/JPEG-image-8.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-10.avif',
+        src: '/japan-adventures/serene/JPEG-image-9.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-11.avif',
+        src: '/japan-adventures/serene/JPEG-image-10.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-12.avif',
+        src: '/japan-adventures/serene/JPEG-image-11.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-13.avif',
+        src: '/japan-adventures/serene/JPEG-image-12.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-14.avif',
+        src: '/japan-adventures/serene/JPEG-image-13.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-15.avif',
+        src: '/japan-adventures/serene/JPEG-image-14.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-16.avif',
+        src: '/japan-adventures/serene/JPEG-image-15.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-17.avif',
+        src: '/japan-adventures/serene/JPEG-image-16.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-18.avif',
+        src: '/japan-adventures/serene/JPEG-image-17.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-19.avif',
+        src: '/japan-adventures/serene/JPEG-image-18.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-20.avif',
+        src: '/japan-adventures/serene/JPEG-image-19.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-21.avif',
+        src: '/japan-adventures/serene/JPEG-image-20.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-22.avif',
+        src: '/japan-adventures/serene/JPEG-image-21.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-23.avif',
+        src: '/japan-adventures/serene/JPEG-image-22.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-24.avif',
+        src: '/japan-adventures/serene/JPEG-image-23.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-25.avif',
+        src: '/japan-adventures/serene/JPEG-image-24.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-26.avif',
+        src: '/japan-adventures/serene/JPEG-image-25.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-27.avif',
+        src: '/japan-adventures/serene/JPEG-image-26.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image-28.avif',
+        src: '/japan-adventures/serene/JPEG-image-27.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
       {
-        src: '/japan-adventures/serene/JPEG-image.avif',
+        src: '/japan-adventures/serene/JPEG-image-28.jpeg',
         caption: 'A tranquil temple surrounded by nature',
         category: 'Serene',
+        season: 'Radiant',
       },
-      // Add more images here...
+      {
+        src: '/japan-adventures/serene/JPEG-image.jpeg',
+        caption: 'A tranquil temple surrounded by nature',
+        category: 'Serene',
+        season: 'Radiant',
+      },
     ],
     Thailand: [
       {

@@ -1,22 +1,8 @@
 import React, { useState } from 'react';
 import galleryData from '../galleryData';
 
-const Gallery = ({ activeCity = 'All' }) => {
-  const [selectedCategory, setSelectedCategory] = useState('All');
+const Gallery = ({ activeCity = 'All', selectedCategory = 'All', searchQuery = '' }) => {
   const [selectedImage, setSelectedImage] = useState(null);
-
-  // Build list of unique categories for the selected city/cities
-  const getAllCategories = () => {
-    const allImages =
-      activeCity === 'All'
-        ? Object.values(galleryData).flat()
-        : galleryData[activeCity] || [];
-
-    const uniqueCategories = Array.from(
-      new Set(allImages.map((img) => img.category))
-    );
-    return ['All', ...uniqueCategories];
-  };
 
   const filteredImages = () => {
     let images =
@@ -30,28 +16,19 @@ const Gallery = ({ activeCity = 'All' }) => {
       images = images.filter((img) => img.category === selectedCategory);
     }
 
+    if (searchQuery.trim()) {
+      images = images.filter((img) =>
+        `${img.city} ${img.category} ${img.caption} ${img.season || ''}`
+          .toLowerCase()
+          .includes(searchQuery.toLowerCase())
+      );
+    }
+
     return images;
   };
 
   return (
     <div className="p-4">
-      {/* Category Filters */}
-      <div className="flex flex-wrap gap-2 mb-6 justify-center">
-        {getAllCategories().map((category) => (
-          <button
-            key={category}
-            onClick={() => setSelectedCategory(category)}
-            className={`px-4 py-2 rounded-full font-semibold transition ${
-              selectedCategory === category
-                ? 'bg-black text-yellow-200'
-                : 'bg-gray-200 text-gray-800 hover:bg-black hover:text-yellow-200'
-            }`}
-          >
-            {category}
-          </button>
-        ))}
-      </div>
-
       {/* Image Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {filteredImages().map((image, index) => (
@@ -72,26 +49,30 @@ const Gallery = ({ activeCity = 'All' }) => {
       {/* Modal / Lightbox */}
       {selectedImage && (
         <div
-          className="fixed inset-0 z-50 bg-black bg-opacity-80 flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4"
           onClick={() => setSelectedImage(null)}
         >
           <div
-            className="relative max-w-3xl w-full"
+            className="relative max-w-4xl w-full max-h-[90vh] overflow-auto bg-white rounded shadow-lg p-4"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute top-2 right-2 text-white text-3xl font-bold"
+              className="absolute top-2 right-4 text-black text-3xl font-bold"
             >
               &times;
             </button>
             <img
               src={selectedImage.src}
               alt={selectedImage.city}
-              className="w-full h-auto rounded shadow-lg"
+              className="w-full max-h-[70vh] object-contain mx-auto rounded"
             />
-            <p className="text-white text-center mt-4">{selectedImage.caption}</p>
-            <p className="text-white text-center text-sm italic">{selectedImage.city}</p>
+            <div className="text-black text-center mt-4 space-y-2">
+              <p className="font-semibold">{selectedImage.caption}</p>
+              <p className="text-sm italic text-gray-600">City: {selectedImage.city}</p>
+              <p className="text-sm italic text-gray-600">Category: {selectedImage.category}</p>
+              <p className="text-sm italic text-gray-600">Season: {selectedImage.season || 'N/A'}</p>
+            </div>
           </div>
         </div>
       )}

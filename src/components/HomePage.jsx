@@ -25,14 +25,7 @@ const HomePage = () => {
 
   return (
     <div className="p-4">
-      {/* Site Title */}
-      <div className='flex justify-center font-bold text-xl mb-4'>
-        <p className='sg p-4 rounded-full bg-black text-yellow-200'>
-          SIGHT GALLERY
-        </p>
-      </div>
 
-      {/* Intro Text */}
       <div className="text-center text-lg font-medium mb-8">
         <p className='uppercase tracking-wide'>Let's go on an adventure together</p>
         <p className="text-sm text-gray-500 mt-2">
@@ -40,7 +33,6 @@ const HomePage = () => {
         </p>
       </div>
 
-      {/* Toggle Filters on Mobile */}
       <div className="sm:hidden flex justify-center mb-4">
         <button
           className="px-4 py-2 bg-black text-yellow-200 rounded flex items-center gap-2"
@@ -53,7 +45,6 @@ const HomePage = () => {
         </button>
       </div>
 
-      {/* Filters Section */}
       <div
         className={`
           transition-all duration-500 ease-in-out overflow-hidden 
@@ -62,7 +53,6 @@ const HomePage = () => {
           flex-col sm:flex-row justify-center gap-4 mb-6 items-center
         `}
       >
-        {/* City Filter */}
         <select
           className="border rounded-lg px-4 py-2 w-full sm:w-auto mb-4 sm:mb-0"
           value={activeCity}
@@ -84,7 +74,6 @@ const HomePage = () => {
           ))}
         </select>
 
-        {/* Search Input */}
         <input
           type="text"
           placeholder="Search by city, category, or season"
@@ -94,7 +83,6 @@ const HomePage = () => {
         />
       </div>
 
-      {/* Gallery Component */}
       <Gallery
         activeCity={activeCity}
         selectedCategory={selectedCategory}

@@ -1,49 +1,44 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes, FaUser } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className='flex flex-col sm:flex-row items-center justify-between p-4 bg-white shadow relative z-10'>
-      {/* Top Row */}
-      <div className='flex items-center justify-between w-full sm:w-auto'>
-        {/* Logo */}
-        <img src="/sg-logo.jpg" alt="Logo" className='w-12 h-12 rounded-lg' />
-
-        {/* Right Icons (Mobile) */}
-        <div className='flex items-center gap-4 sm:hidden'>
-          {/* User Profile Icon */}
-          <FaUser className='text-gray-600 text-xl cursor-pointer' />
-          
-          {/* Mobile Menu Toggle */}
-          <button onClick={() => setIsOpen(!isOpen)} className='text-2xl'>
-            {isOpen ? <FaTimes /> : <FaBars />}
-          </button>
+    <header className="bg-white shadow-md relative z-10">
+      <div className="mx-auto flex items-center justify-between p-4 relative">
+        
+        {/* Left: Logo */}
+        <div className="flex items-center gap-3 z-20">
+          <img src="/sg-logo.jpg" alt="Logo" className="w-12 h-12 rounded-lg" />
         </div>
-      </div>
 
-      {/* Desktop Search and Nav */}
-      <div className='hidden sm:flex items-center gap-6'>
-        {/* User Profile Icon */}
-        <FaUser className='text-gray-600 text-xl cursor-pointer' />
+        {/* Center: Title */}
+        <h1 className="absolute left-1/2 transform -translate-x-1/2 text-xl font-bold text-center">
+          SIGHT GALLERY
+        </h1>
 
-        {/* Navigation Links */}
-        <nav className='flex gap-6 text-sm font-medium'>
+        {/* Right: Nav for large screens */}
+        <nav className="hidden lg:flex gap-8 text-sm font-medium z-20">
           <Link to="/">Home</Link>
-          <Link to="/journey">Journey</Link>
+          <Link to="/seasons">Seasons</Link>
           <Link to="/cities">Cities</Link>
           <Link to="/contact">Contact</Link>
         </nav>
+
+        {/* Mobile/Tablet Menu Button */}
+        <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden text-2xl z-20">
+          {isOpen ? <FaTimes /> : <FaBars />}
+        </button>
       </div>
 
-      {/* Mobile Nav Dropdown */}
+      {/* Mobile/Tablet Nav */}
       {isOpen && (
-        <div className='absolute top-full left-0 w-full bg-white shadow-md sm:hidden'>
-          <ul className='flex flex-col p-4 gap-4 text-center'>
+        <div className="lg:hidden w-full bg-white shadow-md">
+          <ul className="flex flex-col items-center gap-4 py-4 text-sm font-medium">
             <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
-            <li><Link to="/journey" onClick={() => setIsOpen(false)}>Journey</Link></li>
+            <li><Link to="/seasons" onClick={() => setIsOpen(false)}>Seasons</Link></li>
             <li><Link to="/cities" onClick={() => setIsOpen(false)}>Cities</Link></li>
             <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
           </ul>

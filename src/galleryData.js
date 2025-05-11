@@ -813,7 +813,7 @@ const galleryData = {
         src: '/japan-adventures/spring/AV1-Image-File-Format-2.avif',
         caption: 'Cherry blossoms blooming in Spring',
         category: 'Spring',
-        seaso
+        season: 'Sakura Season'
       },
       {
         src: '/japan-adventures/spring/AV1-Image-File-Format-3.avif',

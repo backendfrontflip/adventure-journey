@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import galleryData from '../galleryData';
+import ScrollReveal from 'scrollreveal';
 
 const Gallery = ({ activeCity = 'All', selectedCategory = 'All', searchQuery = '' }) => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -27,16 +28,31 @@ const Gallery = ({ activeCity = 'All', selectedCategory = 'All', searchQuery = '
     return images;
   };
 
+  // ScrollReveal for gallery cards
+  useEffect(() => {
+    const sr = ScrollReveal();
+
+    sr.reveal('.gallery-card', {
+      duration: 800,
+      distance: '40px',
+      origin: 'bottom',
+      interval: 100,
+      easing: 'ease-out',
+      reset: false,
+      cleanup: true,
+    });
+  }, [filteredImages()]);
+
   return (
     <div className="p-4">
       {/* Image Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {filteredImages().map((image, index) => (
-          <div key={index} className="relative group">
+          <div key={index} className="relative group gallery-card">
             <img
               src={image.src}
               alt={`Adventure ${index}`}
-              className="w-full h-64 object-cover rounded shadow cursor-pointer hover:scale-105 transition-transform"
+              className="w-full h-48 sm:h-64 md:h-72 object-cover rounded shadow cursor-pointer hover:scale-105 transition-transform"
               onClick={() => setSelectedImage(image)}
             />
             <p className="absolute bottom-2 left-2 text-white bg-black bg-opacity-60 p-2 rounded text-sm opacity-0 group-hover:opacity-100 transition-opacity">

@@ -1,107 +1,129 @@
 import React, { useState, useEffect } from "react";
+import { toast, ToastContainer } from "react-toastify";
+import { FaInstagram } from "react-icons/fa";
 
 const Contact = () => {
-    const [isSubmitted, setIsSubmitted] = useState(false);
-    const [isLoading, setIsLoading] = useState(false);
-    const [error, setError] = useState(null);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+  const [isLoading, setIsLoading] = useState(false);
 
-    // Auto-dismiss success message after 5 seconds
-    useEffect(() => {
-        if (isSubmitted) {
-            const timer = setTimeout(() => setIsSubmitted(false), 5000);
-            return () => clearTimeout(timer);
-        }
-    }, [isSubmitted]);
+  useEffect(() => {
+    if (isLoading) {
+      const timer = setTimeout(() => setIsLoading(false), 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [isLoading]);
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setIsLoading(true);
-        setError(null);
+  const handleChange = (e) => {
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
 
-        const formData = new FormData(e.target);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
 
-        try {
-            const response = await fetch("https://api.web3forms.com/submit", {
-                method: "POST",
-                body: formData
-            });
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "d84a439b-d600-439c-9a23-88a1362d56a0", 
+          ...formData,
+        }),
+      });
 
-            const result = await response.json();
+      if (res.ok) {
+        toast.success("Message sent successfully! 🎉");
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        toast.error("Something went wrong. Please try again.");
+      }
+    } catch (err) {
+      toast.error("Network error. Please try again.");
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
-            if (result.success) {
-                setIsSubmitted(true);
-                e.target.reset();
-            } else {
-                setError("Something went wrong. Please try again.");
-            }
-        } catch (err) {
-            setError("Network error. Please try again.");
-        } finally {
-            setIsLoading(false);
-        }
-    };
-
-    return (
-        <div className="max-w-xl mx-auto mt-6 p-6 border rounded-lg shadow-md">
-            <h2 className="text-2xl font-bold mb-2">Contact Us</h2>
-            <p className="mb-4 text-gray-600">
+  return (
+    <>
+      <div className="max-w-xl mx-auto mt-6 p-6 border rounded-lg shadow-md">
+        <div className="reveal">
+          <form onSubmit={handleSubmit}>
+            <div className="flex flex-col items-center mb-6 reveal">
+              <h2 className="text-2xl font-bold mb-2">Contact Us</h2>
+              <p className="mb-4 text-gray-600 text-center">
                 If you have any questions, feedback, or partnership ideas, feel free to reach out.
-            </p>
-
-            {isSubmitted && (
-                <div
-                    className="p-4 bg-green-100 text-green-700 rounded transition-opacity duration-500 ease-in-out animate-fade-in"
-                >
-                    ✅ Thank you! Your message has been sent successfully.
-                </div>
-            )}
-
-            <form onSubmit={handleSubmit} className="flex flex-col gap-4 mt-4">
-                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
-
-                <input
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                    required
-                    className="p-2 rounded border hover:bg-gray-100 dark:hover:bg-gray-900"
-                />
-
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Your Email"
-                    required
-                    className="p-2 rounded border hover:bg-gray-100 dark:hover:bg-gray-900"
-                />
-
-                <textarea
-                    name="message"
-                    placeholder="Your Message"
-                    rows="5"
-                    required
-                    className="p-2 rounded border hover:bg-gray-100 dark:hover:bg-gray-900"
-                />
-
-                {error && (
-                    <div className="text-red-600 text-sm">{error}</div>
-                )}
-
-                <button
-                    type="submit"
-                    disabled={isLoading}
-                    className="p-2 rounded-full bg-gray-800 hover:bg-gray-900 text-white transition"
-                >
-                    {isLoading ? "Sending..." : "Send Message"}
-                </button>
-            </form>
-
-            <div className="mt-6 text-sm text-gray-700">
-                <p><strong>Email:</strong> contact@sightgallery.com</p>
-                <p><strong>Location:</strong> Tokyo, Japan</p>
+              </p>
             </div>
+
+            <div className="flex justify-center flex-col gap-4 reveal">
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Your Name"
+                required
+                className="p-3 rounded border hover:bg-gray-100 dark:hover:bg-gray-900 focus:outline-none"
+              />
+
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Your Email"
+                required
+                className="p-3 rounded border hover:bg-gray-100 dark:hover:bg-gray-900 focus:outline-none"
+              />
+
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Your Message"
+                rows="5"
+                required
+                className="p-3 rounded border hover:bg-gray-100 dark:hover:bg-gray-900 focus:outline-none"
+              />
+
+              <button
+                type="submit"
+                disabled={isLoading}
+                className="p-3 rounded-full bg-gray-800 hover:bg-gray-900 text-white transition"
+              >
+                {isLoading ? "Sending..." : "Send Message"}
+              </button>
+            </div>
+          </form>
+          <ToastContainer position="top-center" />
         </div>
-    );
+      </div>
+
+      {/* Footer Section */}
+      <footer className="bg-gray-800 text-white py-4 mt-8 m-8 rounded-lg">
+        <div className="max-w-screen-sm mx-auto flex items-center justify-center">
+          <div className="flex items-center space-x-2">
+            <FaInstagram className="text-3xl font-bold" />
+            <a
+              href="https://www.instagram.com/sightgallerydev" // Replace with your actual Instagram handle
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg font-medium"
+            >
+              Sight Galley Dev
+            </a>
+          </div>
+        </div>
+      </footer>
+    </>
+  );
 };
 
 export default Contact;

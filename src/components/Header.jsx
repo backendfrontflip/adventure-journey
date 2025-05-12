@@ -8,10 +8,14 @@ const Header = () => {
   return (
     <header className="bg-white shadow-md relative z-10">
       <div className="mx-auto flex items-center justify-between p-4 relative">
-        
+
         {/* Left: Logo */}
         <div className="flex items-center gap-3 z-20">
-          <img src="/sg-logo.jpg" alt="Logo" className="w-12 h-12 rounded-lg" />
+          <img
+            src={`${import.meta.env.BASE_URL}sg-logo.jpg`}
+            alt="Logo"
+            className="w-12 h-12 rounded-lg"
+          />
         </div>
 
         {/* Center: Title */}
